@@ -11,7 +11,9 @@ namespace CreateFolder
     {
         static void Main(string[] args)
         {
-                string dirPath = @"C:\test\file";
+            for (int i = 0; i < 10; i++)
+            {
+                string dirPath = @"C:\test\file" + i;
 
                 if (Directory.Exists(dirPath))
                 {
@@ -22,6 +24,6 @@ namespace CreateFolder
                     Directory.CreateDirectory(dirPath);
                     Console.WriteLine("The directory {0} was created.", dirPath);
                 }
-        }
+            }
     }
 }
