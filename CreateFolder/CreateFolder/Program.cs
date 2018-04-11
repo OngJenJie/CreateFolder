@@ -25,5 +25,6 @@ namespace CreateFolder
                     Console.WriteLine("The directory {0} was created.", dirPath);
                 }
             }
+        }
     }
 }
