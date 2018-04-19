@@ -11,7 +11,9 @@ namespace CreateFolder
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine("請輸入你想要創造多少文件夾：");
+            int count = int.Parse(Console.ReadLine());
+            for (int i = 0; i < count; i++)
             {
                 string dirPath = @"C:\test\file" + i;
 
@@ -25,6 +27,7 @@ namespace CreateFolder
                     Console.WriteLine("The directory {0} was created.", dirPath);
                 }
             }
+            Console.ReadKey();
         }
     }
 }
