@@ -19,12 +19,20 @@ namespace CreateFolder
 
                 if (Directory.Exists(dirPath))
                 {
-                    Console.WriteLine("The directory {0} already exists.", dirPath);
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
+                    Console.WriteLine("▉                                         ▉");
+                    Console.WriteLine("▉    The directory {0} already exists.    ▉", dirPath);
+                    Console.WriteLine("▉                                         ▉  ");
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
                 }
                 else
                 {
                     Directory.CreateDirectory(dirPath);
-                    Console.WriteLine("The directory {0} was created.", dirPath);
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
+                    Console.WriteLine("▉                                         ▉");
+                    Console.WriteLine("▉    The directory {0} was created.       ▉", dirPath);
+                    Console.WriteLine("▉                                         ▉  ");
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
                 }
             }
             Console.ReadKey();
