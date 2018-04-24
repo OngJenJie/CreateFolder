@@ -26,22 +26,22 @@ namespace CreateFolder
                 // 如果那個位置已經存在文件夾就通知他
                 if (Directory.Exists(dirPath))
                 {
-                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
-                    Console.WriteLine("▉                                         ▉");
-                    Console.WriteLine("▉    The directory {0} already exists.    ▉", dirPath);
-                    Console.WriteLine("▉                                         ▉  ");
-                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
+                    Console.WriteLine("▉                                                    ▉");
+                    Console.WriteLine("▉    The directory {0} already exists.     ▉", dirPath);
+                    Console.WriteLine("▉                                                    ▉  ");
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
                 }
 
                 // 如果沒有就創建文件夾
                 else
                 {
                     Directory.CreateDirectory(dirPath);
-                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
-                    Console.WriteLine("▉                                         ▉");
-                    Console.WriteLine("▉    The directory {0} was created.       ▉", dirPath);
-                    Console.WriteLine("▉                                         ▉  ");
-                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
+                    Console.WriteLine("▉                                                    ▉");
+                    Console.WriteLine("▉    The directory {0} was created.        ▉", dirPath);
+                    Console.WriteLine("▉                                                    ▉  ");
+                    Console.WriteLine("▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅");
                 }
             }
             Console.ReadKey();
